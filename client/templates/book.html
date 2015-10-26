@@ -1,0 +1,20 @@
+<template name="book">
+  <div class="books-shelf-content">
+    <div class="books-shelf-image-container">
+    <a href="#">
+      <div class="books-img">
+        <img src="images/{{cover}}" alt="{{title}}"/>
+      </div>
+    </a>
+    </div>
+  </div>	
+  <div class="book-shelf-info">
+    <p class="book-shelf-title">{{title}}</p>
+    <p class="book-shelf-author">{{author}}</p>
+    {{#if borrowed_to}}
+      <div class="books-shelf-return">Return</div>
+    {{else}}
+      <div class="books-shelf-borrow">borrow</div>
+    {{/if}}
+  </div>	
+</template>
