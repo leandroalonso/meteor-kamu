@@ -1,6 +1,6 @@
 Meteor.methods({
-  borrowBook: function(bookId) {
-    Books.update(bookId, { $set: { borrowed: true } })
+  borrowBook: function(bookId, userSessionId) {
+    Books.update(bookId, { $set: { borrowed: userSessionId } })
   },
 
   returnBook: function(bookId) {

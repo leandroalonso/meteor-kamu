@@ -12,7 +12,9 @@
     <p class="book-shelf-title">{{title}}</p>
     <p class="book-shelf-author">{{author}}</p>
     {{#if borrowed}}
-      <div class="books-shelf-return">Return</div>
+      {{#if borrowedByMe borrowed}}
+        <div class="books-shelf-return">Return</div>
+      {{/if}}
     {{else}}
       <div class="books-shelf-borrow">borrow</div>
     {{/if}}
