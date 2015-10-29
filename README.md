@@ -1,4 +1,7 @@
 # Meteor Kamu
+
+[![Build Status](https://snap-ci.com/leandroalonso/meteor-kamu/branch/master/build_image)](https://snap-ci.com/leandroalonso/meteor-kamu/branch/master)
+
 Meteor Kamu is a partial implementation of [ThoughtWorks' Kamu](https://github.com/tw-library/) using [Meteor](https://www.meteor.com/).
 
 This project is only for testing purposes.
